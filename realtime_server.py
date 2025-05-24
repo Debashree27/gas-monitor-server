@@ -8,11 +8,13 @@ model = joblib.load("adc_corrector.pkl")
 
 # MySQL connection config
 db_config = {
-    'host': 'localhost',
-    'user': 'root',
-    'password': '',
-    'database': 'project'
+    'host': 'mysql-9xqe.railway.internal',      # e.g., containers-us-west-XX.railway.app 
+    'port': 3306,                          # usually 3306 or the port shown on Railway 
+    'user': 'root', 
+    'password': 'JjuZBPoQxFdovAkfngmsosZNugvMHOwg', 
+    'database': 'railway' 
 }
+
 
 app = Flask(__name__)
 
