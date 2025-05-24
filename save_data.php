@@ -2,10 +2,10 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-$servername = "localhost";
+$servername = "mysql-9xqe.railway.internal";
 $username = "root";
-$password = "";
-$dbname = "project";
+$password = "JjuZBPoQxFdovAkfngmsosZNugvMHOwg";
+$dbname = "railway";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
